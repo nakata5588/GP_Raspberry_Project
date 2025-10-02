@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage a racing team in this game, drawing inspiration from Cockpit Manager, Brasfoot, Football Manager, and more. Immerse yourself in this thrilling world, making strategic decisions to guide your team to victory.">
+    
+    <link rel="stylesheet" href="./styles/styles.css"/>
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    
+    <script src="./lib/sweetalert2.min.js"></script>
+
+    <link rel="stylesheet" href="./lib/sweetalert2.min.css">
+    <link rel="stylesheet" href="./lib/line-icons/lineicons.css">
+
+    <script src="./lib/popper.min.js"></script>
+    <script src="./lib/tippy-bundle.umd.min.js"></script>
+    <script src="./lib/chart.js" defer></script>
+    <script src="./lib/iconify/iconify-icon.min.js"></script>
+
+    <script src="./scripts/events.js" type="module" defer></script>
+    
+    <title>Grand Prix Tycoon</title>
+</head>
+<body>
+    <main>
+        <div id="team-menu">
+            <div id="button-list">
+                <button id="btn-save-game"><img src="./img/ui/save.png"> Salvar Jogo</button>
+                <button id="btn-options"><img src="./img/ui/settings.png"> Opções</button>
+                <br>
+                <p>Classificação</p>
+                <button id="btn-standings"><img src="./img/ui/ranking.png">Class. Pilotos</button>
+                <button id="btn-team-standings"><img src="./img/ui/team-ranking.png">Class. Equipes</button>
+                <br>
+                <p>Mercado</p>
+                <button id="btn-market" class="market"><img src="./img/ui/market.png"> Pilotos</button>
+                <button id="btn-market-eng"  class="market-eng"><img src="./img/ui/market-eng.png"> Engenheiros</button>
+                <br>
+                <button id="btn-news"><img src="./img/ui/news.png">Notícias <span></span></button>
+                <button id="btn-sponsors"><img src="./img/ui/money2.png">Patrocinadores</button>
+                <button id="btn-bank"><img src="./img/ui/loan.png">Banco</button>
+                <button id="btn-advertising"><img src="./img/ui/advertising.png">Marketing</button>
+                <button id="btn-agreements"><img src="./img/ui/deal.png">Acordos</button>
+                <button id="btn-rules"><img src="./img/ui/meeting.png">Cúpula de Equipes</button>
+                <br>
+                <button id="btn-search"><img src="./img/ui/search.png">Pesquisar</button>
+                <button id="btn-historic"><img src="./img/ui/past.png">Histórico</button>
+            </div>
+            <div id="team-menu-interface">
+                <div id="info">
+                    <h1 id="year">2023</h1>
+                    <div id="team">
+                        <div>
+                            <img id="team-logo" class="logo" alt="Team Logo">
+                            <h1 id="name"></h1>
+                        </div>
+                        <div id="reputation"></div>
+                        <div id="money" class="view-financial-report"></div>
+                        <div id="supporters"><p>10M</p></div>
+                    </div>
+                    <div id="next-race">
+                        <h1>Próxima Corrida</h1>
+                        <div id="next-race-name"></div>
+                        <button id="btn-play"><span>Continuar</span></button>
+                    </div>
+                </div>
+                <!--
+                <div id="tab-button-list">
+                    <button>Carro</button>
+                    <button>Engenheiros</button>
+                    <button>Engenheiros</button>
+                </div>
+                <div id="tab">-->
+                    <div id="drivers-car-section">
+                        <div id="drivers"></div>
+                        <div id="car" class="bars-table">
+                            <div id="car-info"></div>
+                            <div id="chassis"></div>
+                            <div id="engine"></div>
+                        </div>
+                    </div>
+                    <div id="engineering"></div>
+                    <div id="development"></div>
+                </div>
+        </div>
+
+        <div id="editor-menu">
+            <h1>Editor - GP Tycoon</h1>
+            
+            <div id="editor-menu-interface"></div>
+        </div>
+
+        <div id="main-menu">
+            <h1>GP Tycoon</h1>
+            <div class="wrap">
+                <button id="start-game" class="main-menu-btn"><span>Novo Jogo</span></button>
+                <button id="load-game" class="main-menu-btn"><span>Carregar Jogo</span></button>
+                <button id="editor" class="main-menu-btn"><span>Editor</span></button>
+            </div>
+            <small>Copyright © <a href="https://jgss-gabriel-sousa.github.io/" target="_blank">JGSS</a> - version 0.15 (Ocon)</small>
+        </div>
+
+        <div id="players-menu"></div>
+    </main>
+</body>
+</html>
